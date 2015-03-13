@@ -10,7 +10,7 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <title><?php wp_title('&raquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="<?php echo CONSTRUCTOR_DIRECTORY_URI; ?>/js/html5.js"></script>
+    <script type="text/javascript" src="<?php echo CONSTRUCTOR_DIRECTORY_URI; ?>/js/html5shiv.min.js"></script>
     <![endif]-->
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>"/>

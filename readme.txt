@@ -2,7 +2,7 @@
 Author: Anton Shevchuk
 Author URI: http://anton.shevchuk.name/
 
-Theme URI: http://code.google.com/p/wp-constructor/
+Theme URI: https://github.com/AntonShevchuk/wp-constructor/
 
 == Description ==
 
@@ -44,4 +44,4 @@ For Wordpress version 3.0+
 
 == Documentation ==
 
-See all documentation on project homepage: http://code.google.com/p/wp-constructor/
+See all documentation on project homepage: http://antonshevchuk.github.io/wp-constructor/
