@@ -37,23 +37,21 @@ define('CONSTRUCTOR_CUSTOM_THEMES_URI',  CONSTRUCTOR_CUSTOM_CONTENT_URI.'/themes
 
 load_theme_textdomain('constructor', CONSTRUCTOR_DIRECTORY.'/lang');
 
-// support features
-if (function_exists('add_theme_support')) { // Added in 2.9
-	// This theme uses post thumbnails
-	add_theme_support('post-thumbnails' );
-	set_post_thumbnail_size(64, 64, true); // Normal post thumbnail
-	add_image_size('list-post-thumbnail', 128, 128, true );
-	add_image_size('tile-post-thumbnail', 320, 320, true );
-	    
-	// This theme uses wp_nav_menu()
-	add_theme_support('menus');
+// This theme uses post thumbnails
+add_theme_support('post-thumbnails' );
+set_post_thumbnail_size(64, 64, true); // Normal post thumbnail
+add_image_size('list-post-thumbnail', 128, 128, true );
+add_image_size('tile-post-thumbnail', 320, 320, true );
 
-	// Add default posts and comments RSS feed links to head
-	add_theme_support('automatic-feed-links');    	
-}
+// This theme uses wp_nav_menu()
+add_theme_support('menus');
 
-// sidebar registration
-if (function_exists('register_sidebar')) {
+// Add default posts and comments RSS feed links to head
+add_theme_support('automatic-feed-links');
+
+// Sidebar registration
+add_action( 'widgets_init', 'constructor_widgets_init' );
+function constructor_widgets_init() {
 
     register_sidebar(array(
         'id'=>'header',
@@ -63,7 +61,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<span>',
         'after_title' => '</span>',
     ));
-    
+
     register_sidebar(array(
         'id'=>'content',
         'name'=>'After N Post',
@@ -72,7 +70,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>',
     ));
-    
+
     register_sidebar(array(
         'id'=>'incontent',
         'name'=>'In Posts',
@@ -81,7 +79,7 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>',
     ));
-    
+
     // options for all follows sidebars
     $widget_options = array(
         'before_widget' => '<li id="%1$s" class="widget %2$s">',
@@ -89,27 +87,26 @@ if (function_exists('register_sidebar')) {
         'before_title' => '<h3 class="widgettitle">',
         'after_title' => '</h3>',
     );
-    
+
     register_sidebar(array_merge($widget_options, array('id'=>'sidebar','name'=>'Sidebar')));
     register_sidebar(array_merge($widget_options, array('id'=>'sidebar-categories', 'name'=>'Sidebar for Categories')));
     register_sidebar(array_merge($widget_options, array('id'=>'sidebar-posts', 'name'=>'Sidebar for Posts')));
     register_sidebar(array_merge($widget_options, array('id'=>'sidebar-pages', 'name'=>'Sidebar for Pages')));
-    
+
     register_sidebar(array_merge($widget_options, array('id'=>'extra','name'=>'Extrabar')));
     register_sidebar(array_merge($widget_options, array('id'=>'extra-categories','name'=>'Extrabar for Categories')));
     register_sidebar(array_merge($widget_options, array('id'=>'extra-posts','name'=>'Extrabar for Posts')));
     register_sidebar(array_merge($widget_options, array('id'=>'extra-pages','name'=>'Extrabar for Pages')));
-    
-    register_sidebar(array_merge($widget_options, array('id'=>'footer', 'name'=>'Footer'))); 
-    register_sidebar(array_merge($widget_options, array('id'=>'footer-categories', 'name'=>'Footer for Categories'))); 
-    register_sidebar(array_merge($widget_options, array('id'=>'footer-posts', 'name'=>'Footer for Posts'))); 
-    register_sidebar(array_merge($widget_options, array('id'=>'footer-pages', 'name'=>'Footer for Pages'))); 
+
+    register_sidebar(array_merge($widget_options, array('id'=>'footer', 'name'=>'Footer')));
+    register_sidebar(array_merge($widget_options, array('id'=>'footer-categories', 'name'=>'Footer for Categories')));
+    register_sidebar(array_merge($widget_options, array('id'=>'footer-posts', 'name'=>'Footer for Posts')));
+    register_sidebar(array_merge($widget_options, array('id'=>'footer-pages', 'name'=>'Footer for Pages')));
+
 }
 
-// navigation menu
-if (function_exists('register_nav_menu')) {
-    register_nav_menu('header', __('Header Menu','constructor'));
-}
+// Navigation menu
+register_nav_menu('header', __('Header Menu','constructor'));
 
 if (!is_admin()) {    
     

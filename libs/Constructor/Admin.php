@@ -713,7 +713,9 @@ Author URI: $author_uri
            <h2><?php _e('Customize Theme', 'constructor'); ?></h2>
            <?php
                if ( $this->_admin['donate'] ) {
-                   echo '<div id="message" class="updated fade donate"><div class="donate-button">'.$this->_donate.'</div><p>'.__('If you like this theme and find it useful, help keep this theme free and actively developed by clicking the donate button (via PayPal or CC)').'</p><a href="'.get_bloginfo('wpurl').'/wp-admin/admin-ajax.php" class="message-close ui-icon ui-icon-close" title=":("><span/></a><br class="clear"/></div>';
+                   echo '<div id="message" class="updated fade donate"><div class="donate-button">'.$this->_donate.'</div>'.
+                        '<p>'.__('If you like this theme and find it useful, help keep this theme free and actively developed by clicking the donate button (via PayPal or CC)').'</p>'.
+                        '<a href="'.site_url().'/wp-admin/admin-ajax.php" class="message-close ui-icon ui-icon-close" title=":("><span/></a><br class="clear"/></div>';
                }
                
                if ( isset( $_REQUEST['saved'] ) ) {

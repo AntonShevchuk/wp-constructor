@@ -8,7 +8,7 @@
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-    <title><?php wp_title('&raquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <title><?php wp_title(); ?></title>
     <!--[if lt IE 9]>
     <script type="text/javascript" src="<?php echo CONSTRUCTOR_DIRECTORY_URI; ?>/js/html5shiv.min.js"></script>
     <![endif]-->
