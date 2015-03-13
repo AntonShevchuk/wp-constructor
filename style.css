@@ -1,8 +1,8 @@
 /*  
 Theme Name: Constructor
-Theme URI: http://code.google.com/p/wp-constructor/
+Theme URI: https://github.com/AntonShevchuk/wp-constructor/
 Description: Wordpress Constructor Theme for those who want to create a unique blog design quickly and effortlessly (many layouts, configured colors, custom fonts and slideshow, etc). Start build your own theme from <a href="themes.php?page=functions.php">settings page</a>.
-Version: 1.6.5
+Version: 1.6.6
 Author: Anton Shevchuk
 Author URI: http://anton.shevchuk.name/
 Tags: fixed-width, one-column, two-columns, three-columns, threaded-comments, custom-colors, custom-header, theme-options, left-sidebar, right-sidebar
@@ -107,7 +107,7 @@ img.size-auto, img.size-full, img.size-large, img.size-medium, .attachment img {
 /*/Autogenerate styles*/
 /*Layout*/
 /*#wrapheader,#wrapper,#wrapfooter*/
-.wrapper { 
+.wrapper {
     width:100%
 }
 #header,#slideshow,#content,#footer{
@@ -266,7 +266,7 @@ aside {
 aside h3{
     font-size:1.4em;
     padding:4px
-}    
+}
 aside a {
     padding:0;
 }
@@ -323,7 +323,7 @@ article header, .pagetitle {
     margin-bottom: 8px
 }
 
-article > p, 
+article > p,
 article .entry {
     font-size:1.4em;
     line-height:1.6em;
@@ -339,7 +339,7 @@ article .entry h6,
 article .entry ul,
 article .entry ol {
     margin-left:12px;
-} 
+}
 article .entry p{
     margin-bottom:4px
 }
@@ -465,7 +465,7 @@ article .crop img {
 
 /*Attachments*/
 .attachment-list {
-    
+
 }
 .attachment-list.preview {
     overflow:hidden;
@@ -486,7 +486,7 @@ article .crop img {
 }
 /*/Attachments*/
 /*/Post*/
-/*Author*/ 
+/*Author*/
 .author dl {
     overflow: hidden;
     margin:8px 0;
@@ -523,7 +523,7 @@ article .crop img {
 /*/Simple*/
 /*Tile*/
 .tile {
-    
+
 }
 .tile > div {
     width:33.3%;
@@ -896,7 +896,7 @@ aside th {
 .commentlist li li {
     margin: 0 -4px 1px 0
 }
-.commentlist li .avatar { 
+.commentlist li .avatar {
     float: right;
     padding: 2px;
     background: #fff;
@@ -1022,7 +1022,7 @@ aside th {
 /*/Caption*/
 /*Calendar*/
 #wp-calendar {
-    
+
 }
 #wp-calendar caption{
     padding:4px 0;
@@ -1050,7 +1050,7 @@ aside th {
 #wp-calendar tbody a:hover{
     text-decoration:none
 }
-#wp-calendar #today {  
+#wp-calendar #today {
     font-weight:700;
 }
 /*/Calendar*/
@@ -1078,10 +1078,10 @@ aside th {
 .wp-sl span.prev {
     left:4px;
 }
-.wp-sl span.next {    
+.wp-sl span.next {
     right:4px;
 }
-.wp-sl span.more {    
+.wp-sl span.more {
     display:block;
 }
 
@@ -1104,7 +1104,7 @@ aside th {
     font-size:1.6em;
     font-weight:900 !important;
     line-height:34px;
-    
+
     text-indent:28px;
     text-transform:uppercase;
     text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
@@ -1116,10 +1116,10 @@ aside th {
     position:absolute;
     z-index:5;
     border-width:0 1px 0 0;
-    border-style:solid;    
+    border-style:solid;
 }
 .wp-sl p {
-    bottom:6px;    
+    bottom:6px;
     right:4px;
 	padding:6px;
     width:64%;
@@ -1152,27 +1152,27 @@ aside th {
 /*Buttons*/
 .button, .button:visited {
 	background-image:url(images/alert-overlay.png) !important; /* important requried by IE for opacity elements*/
-	background-repeat: repeat-x; 
-	display: inline-block; 
-	padding: 2px 10px; 
+	background-repeat: repeat-x;
+	display: inline-block;
+	padding: 2px 10px;
 	text-decoration: none;
-	
+
 	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-	
+
 	border-bottom: 1px solid rgba(0,0,0,0.25);
 	position: relative;
 	cursor: pointer;
-	
+
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 13px;
 }
 	.button:hover { background-color: #111; color: #fff; }
 	.button:active { top: 1px; }
-	
+
 /*/Buttons*/
 /*/Theme*/
 
@@ -1183,8 +1183,8 @@ article .entry img,
 .wp-caption,
  input, select, textarea,
 .button, .button:visited {
-	border-radius: 2px; 
-	-moz-border-radius: 2px; 
+	border-radius: 2px;
+	-moz-border-radius: 2px;
     -khtml-border-radius: 2px;
 	-webkit-border-radius: 2px;
 }

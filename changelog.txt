@@ -1,7 +1,13 @@
 = Versions history =
-This is local copy of file https://code.google.com/p/wp-constructor/wiki/ConstructorHistory
 
 == 1.6.6 ==
+  * Project migrated to GitHub
+  * Updated html5shiv script
+  * Updated screenshot.png
+  * Removed old constructor method
+  * Rename theme directory to "constructor1" (for avoid issue with theme manager)
+
+== 1.6.5 ==
   * Fixed "blank page" for empty search results
 
 == 1.6.4 ==

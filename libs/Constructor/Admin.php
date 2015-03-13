@@ -69,7 +69,7 @@ class Constructor_Admin extends Constructor_Abstract
 
     /**
      * Check directories and permissions
-     * @return void
+     * @return bool
      */
     function permissions()
     {

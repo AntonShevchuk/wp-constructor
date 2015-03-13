@@ -222,16 +222,6 @@ class Constructor_Abstract
     var $_themes = null;
 
     /**
-     * Nix_Abstract
-     *
-     * @access  public
-     */
-    function Constructor_Abstract()
-    {
-        $this->__construct();
-    }
-
-    /**
      * Constructor of Nix_Abstract
      *
      * @access  public

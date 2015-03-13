@@ -116,7 +116,7 @@ if (!is_admin()) {
     /**
      * Parse request
      *
-     * @param unknown_type $wp
+     * @param WP $wp
      */
     function constructor_parse_request($wp) {
         // only process requests with "my-plugin=ajax-handler"
@@ -132,8 +132,7 @@ if (!is_admin()) {
             // die after return data
             die();
         } elseif (array_key_exists('preview', $wp->query_vars)) {
-            global $postfix;
-            
+            // void
         }
     }
     add_action('wp', 'constructor_parse_request');
@@ -199,7 +198,7 @@ if (!is_admin()) {
      *
      * @access  public
      * @param   boolean  $in In or Out of content container
-     * @return  rettype  return
+     * @return  void
      */
     function get_constructor_slideshow($in = false)
     {
